@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+    list-style: none;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+@font-face{
+font-family: 'PFAgoraSansPro-Light';
+src: url('../fonts/PFAgoraSansPro-Light.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+.clearfix {
+	overflow: auto;
+}
+/*.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}*/
+.wrapper {
+  position: relative;
+  min-width: 1000px;
+  margin: auto;
+  min-height: calc(100vh - 105px);
+}
+.slider, .text, .products, .informer {
+	width: 895px;
+	margin: auto;
+}
+.header, .footer {
+	width: 900px;
+	margin: auto;
+	font-family: "PFAgoraSansPro-Light";
+}
+.header__inner {
+	padding: 50px 0 45px 0;
+}
+.logo__img {
+  background: url(../img/logo.png) no-repeat;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+.logo__text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+  font-size: 38px;
+  color: #5b5b5b;
+}
+.logo {
+ 	display: inline-block;
+     padding: 5px 0 0 0;
+}
+.header__menu {
+	display: inline-block;
+	float: right;
+	font-size: 19px;
+	padding: 15px 0 0 0; 
+	margin-right: -15px;
+}
+.menu__item {
+	display: inline-block;
+}
+.item__link {
+	color: #767676;
+	padding: 3px 15px;
+}
+.item__link:hover {
+	color: #fff;
+    background: linear-gradient(45deg, white, 10px, transparent 10px), 
+                linear-gradient(-45deg, white, 10px, transparent 10px),
+                linear-gradient(135deg, white 10px, transparent 10px),
+                linear-gradient(-135deg, white 10px, transparent 10px);
+    background-color: #e3303d;
+    padding: 3px 15px;
+}
+.item__link-active {
+    background: linear-gradient(45deg, white, 10px, transparent 10px), 
+                linear-gradient(-45deg, white, 10px, transparent 10px),
+                linear-gradient(135deg, white 10px, transparent 10px),
+                linear-gradient(-135deg, white 10px, transparent 10px);
+    background-color: #f1f1f1;
+    padding: 3px 15px;
+}
+.slider {
+	width: 995px;
+	height: 525px;
+	position: relative;
+}
+.slider__bg {
+	background: url(../img/banner-bg.png) no-repeat;
+	width: 1050px;
+	height: 593px;
+	position: absolute;
+	z-index: 1;
+	top: -25px;
+	left: -25px;
+}
+.slider__bgs {
+	background: url(../img/banner-bgs.png) no-repeat;
+	width: 1678px;
+	height: 578px;
+	position: absolute;
+	top: 75px;
+    right: -330px;
+}
+.corners__top {
+	background: url(../img/banner-corner-top.png) no-repeat;
+	width: 75px;
+	height: 65px;
+	position: absolute;
+	z-index: 3;
+	top: -25px;
+	right: 37px;
+}
+.corners__bottom {
+	background: url(../img/banner-corner-bottom.png) no-repeat;
+	width: 274px;
+	height: 93px;
+	position: absolute;
+	z-index: 3;
+	bottom: -43px;
+	right: 33px;
+}
+.banner {
+	background: url(../img/banner.jpg) no-repeat;
+	width: 994px;
+	height: 524px;
+	position: absolute;
+	z-index: 2;
+}
+.apple {
+	background: url(../img/banner-apple.png) no-repeat;
+	width: 340px;
+	height: 402px;
+	position: absolute;
+	z-index: 2;
+    top: 195px;
+    left: 90px;
+}
+.banner__title {
+	font-family: "PFAgoraSansPro-Light";
+	color: white;
+	font-size: 36px;
+	display: inline-block;
+	position: absolute;
+    top: 305px;
+    left: 450px;
+}
+.banner__description {
+	font-family: "Tahoma";	
+	font-size: 14px;
+	line-height: 1.6;
+	color: white;
+	width: 480px;
+	display: inline-block;
+	position: absolute;
+    top: 360px;
+    left: 450px;
+}
+.slider__nav {
+    position: absolute;
+    height: 65px;
+    width: 1170px;
+    top: 230px;
+    left: -90px;
+}
+.nav__prew {
+    background: url(../img/next-prev.png) no-repeat;
+    width: 35px;
+    height: 65px;
+    z-index: 1;
+    display: inline-block;
+    cursor: pointer;
+}
+.nav__prew:hover {
+	background-position: left bottom;
+}
+.nav__next {
+    background: url(../img/next-prev.png) no-repeat;
+    width: 35px;
+    height: 65px;
+    background-position: right top;
+    z-index: 1;
+    float: right;
+    cursor: pointer;
+}
+.nav__next:hover {
+	background-position: right bottom;
+}
+
+
+/* --CONTENT-- */
+
+.text {
+	padding: 60px 0 0 0;
+}
+.text__title {
+	font-family: "PFAgoraSansPro-Light";
+}
+.text__description {
+	padding: 15px 0 65px 0;
+	font-family: "Tahoma";
+	font-size: 14px;
+	line-height: 1.6;
+	color: #4b4b4b;
+}
+.products__item {
+	display: inline-block;
+	width: 290px;
+	vertical-align: top;
+}
+.item__img {
+	float: left;
+	margin-right: 20px;
+}
+.item__title {
+	display: inline-block;
+	vertical-align: top;
+	padding: 15px 0 20px 0;
+	font-family: "PFAgoraSansPro-Light";
+	font-size: 25px;
+}
+.item__description {
+	display: inline-block;
+	width: 150px;
+	padding-bottom: 15px;
+	font-family: "Tahoma";
+	font-size: 13px;
+}
+.item__buy {
+  display: inline-block;
+  height: 24px;
+  line-height: 27px;
+  background: #444444;
+  color: #fff;
+  position: relative;
+  padding: 0 5px;
+  margin-left: 15px;
+  font-family: "PFAgoraSansPro-Light";
+font-size: 15px;
+}
+.item__price {
+	display: inline-block;
+  height: 24px;
+  line-height: 25px;
+  background: #1d1d1d;
+  color: #fff;
+  position: relative;
+  padding: 0 5px;
+  margin-left: -4px;
+}
+.item__buy:before {
+	width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-right: 15px solid #444444;
+	border-bottom: 12px solid transparent;
+  content: "";
+  position: absolute;
+  left: -15px;
+  bottom: 0px;
+}
+.item__price:after {
+	width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-left: 15px solid #1d1d1d;
+	border-bottom: 12px solid transparent;
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: 0px;
+}
+
+.informer-wrapper {
+	width: 100%;
+	background-color: #f8f8f8;
+/*	height: 175px;*/
+	margin: 55px 0 0 0;
+	padding: 20px 0;
+}
+.informer {
+	max-width: 995px;
+}
+.informer__img {
+	display: inline-block;
+	float: left;
+	margin-right: -20px;
+}
+/*.informer:after {
+	content: "";
+	clear: both;
+	display: table;
+}*/
+
+.informer__title {
+	display: inline-block;
+	padding: 35px 0 10px 0;
+	font-family: "PFAgoraSansPro-Light";
+	font-size: 25px;
+}
+.informer__description {
+	display: inline-block;
+	width: 600px;
+	font-family: "Tahoma";
+	font-size: 13px;
+	color: #5e5e5e;
+}
+.informer__link {
+	color: #5f93a2;
+}
+/* --FOOTER-- */
+
+.footer {
+	height: 105px;
+	margin: auto;
+	display: flex;
+}
+.footer__logo {
+	background: url(../img/logo-footer.png) no-repeat;
+	width: 45px;
+	height: 45px;
+}
+.footer__copyright {
+	padding-left: 15px;
+	font-family: "Tahoma"; 
+}
+.footer__telephone {
+	left: 345px
+}
+.footer__social {
+	left: 355px;
+}
+.social__fb {
+	display: inline-block;
+	background: url(../img/fb.png) no-repeat;
+	width: 48px;
+	height: 48px;
+}
+.social__tw {
+	display: inline-block;
+	background: url(../img/tw.png) no-repeat;
+	width: 35px;
+	height: 35px;
+	right: 10px;
+	top: 10px;
+    position: relative;
+}
+.footer__logo, .footer__copyright, .footer__telephone, .footer__social {
+	margin: auto 0;
+	display: inline-block;	
+	position: relative;
+}
+.copyright__top {
+	font-size: 13px;
+	font-family: "Tahoma";
+	color: #6c6c6c;
+}
+.copyright__bottom {
+	font-size: 11px;
+	color: #6c6c6c;
+}
+.telephone__title {
+	font-size: 17px;
+}
+.telephone__number {
+	font-size: 30px;
+	font-weight: 900;
+}
